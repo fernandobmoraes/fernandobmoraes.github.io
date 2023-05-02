@@ -9,9 +9,9 @@ body {
 }
 
 header, footer {
-  background: #bc6c25;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FFD194, #D1913C, #bc6c25);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FFD194, #D1913C, #bc6c25); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #bf5a03;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f8b45b, #d18420, #bf5a03);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f8b45b, #d18420, #bf5a03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: left;
 /*  min-width: 500px; */
 }
@@ -50,7 +50,7 @@ h2 {
   letter-spacing: 0.3px;
   text-align: left;
   color: #dda15e;
-  padding: 10px 0px 10px 10px;
+  padding: 10px 20px 0px 20px;
 }
 
 img {
@@ -94,7 +94,7 @@ font-family: 'Inconsolata', monospace;
 }
 
 .myButton:hover {
-    background-color:#e69708;
+  background-color: #703400;
 }
 
 .myButton:active {
@@ -102,38 +102,10 @@ font-family: 'Inconsolata', monospace;
     top:1px;
 }
 
-.recipe {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.project {
+  background: #fbefe4;  /* fallback for old browsers */
+  box-shadow: 0 0px 1px 0 rgb(0 0 0 / 40%); 
   width: 100%;
-}
-
-
-
-.a {
-  
-}
-
-.c {
-
-}
-
-.time {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 20px;
-  height: auto;
-}
-
-.mins {
-  display: inline-block;
-  font-family: 'Karla', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #4a4a4a;
-  position: relative;
-  bottom: 5px;
 }
 
 .description {
@@ -144,8 +116,7 @@ font-family: 'Inconsolata', monospace;
   letter-spacing: 0.1px;
   text-align: left;
   color: #4a4a4a;
-  padding: 10px 0px 10px 10px;
-  border-top: 1px solid #4a4a4a;
+  padding: 0px 20px 20px 20px; 
 }
 
 .logo {
