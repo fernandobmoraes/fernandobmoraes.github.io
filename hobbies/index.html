@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fernando's Hobbies</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- (Optional) Make sure the page doesn’t scroll horizontally -->
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace;
+            line-height: 1.7;
+        }
+
+        .banner {
+            text-align: center;
+            background-color: #FDF9F8;
+            border: 1px solid #00000028;
+        }
+
+        .terminal-prompt {
+            padding-top: 20px;
+            padding-left: 20px;
+            margin-right: 10px;
+        }
+
+        .content-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: #FF69B4;
+            text-decoration: none;
+            /* remove link underline */
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+            /* underline on link when hovering over */
+        }
+
+        .ascii-art {
+            padding-left: 120px;
+            padding-right: 120px;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Banner (same as your main pages) -->
+    <header class="banner" style="color: black;">
+        <h3 id="bannerId"></h3> <!-- 📁 fernando —— -zsh —— WIDTHxHEIGHT -->
+    </header>
+
+    <h3 class="terminal-prompt">fernando@MacBookPro Hobbies % ls </h3>
+
+    <div class="content-container">
+        ⚽️ :  <a href="/hobbies/soccer/">playing soccer</a><br>
+        🛫 : traveling (<a href="/hobbies/travels/">pics around the globe</a>)<br>
+        👨🏽‍🍳 : <a href="/hobbies/cooking/">making new dishes</a> (and <a href="hobbies/eating/">trying new ones</a>)<br>
+        ✍🏽 : writing <a href="/blogs/">blogs</a> (did I already say that?)<br>
+        👨🏽‍🏫 : teaching computer science to my girlfriend<br>
+        🎨 : animation (coming soon)<br>
+        🎥 : video making(coming soon)<br>
+        loading ...
+    </div>
+
+    <h3 align="center"><a href="/" class="back-link">Back to Home</a></h3>
+    
+    <div class="ascii-art">
+        <h1>
+            <pre>
+                                             .                    
+                                            /~1
+       'keep going ...'                   _?   \   ,
+      /                                  / ,    \ /ˆ\  
+     O                            _  /\_/ /~\   /ˆ\  l,
+    /|\                         _/w\/    /   \ç/   \_/^\     
+    / \                       _/    \_1_/               \_          dreams
+            </pre>
+        </h1>
+    </div>
+
+    <!-- Banner + Theme script (only banner part shown here) -->
+    <script>
+        // Update banner with viewport dimensions
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        document.getElementById('bannerId').textContent =
+            '📁 fernando —— -zsh —— ' + width + 'x' + height;
+    </script>
+</body>
+
+</html>

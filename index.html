@@ -1,93 +1,385 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando B. M.</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a4808dbaff.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
+    <!-- JetBrains Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <div class="container">
+    <!-- Start of CSS -->
+    <style>
+        /* 1. Reset margins/padding & set box-sizing for predictability */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-      <header>
-        <div class="wrapper">
-          <h1><b>Fernando Branco Moraes</b> 
-            <div class="header-icons">
-              <ul class="icons">
-              <li><a href="https://www.instagram.com/_fernandobranco/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/fernando-branco-moraes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://github.com/fernandobmoraes/" target="_blank"><i class="fab fa-github"></i></a></li>
-              </ul>
-              </div>
-          </h1>
-          <p class="bio">
-            Welcome User! I am a Secure-Computing major seeking a Computer Science degree, and a Human-Computer Interaction minor 🦾. I consider myself an ethical hacker, programmer, and soccer enthusiast 👨🏽‍💻⚽️. This website collects some of projects and activities I've worked on that I believe are worth sharing with you :) Enjoy your surf 🏄🏽‍♂️!
-          </p>
-          <div class="buttonBox">
-            <a class="myButton"href="#projects">Go</a>
-          </div>
-        </div>
-      </header>
+        html,
+        body {
+            height: 100%;
+        }
 
-      <main id="projects">
-        <div class="project">
-            <img src="images/soccer.jpg" alt="Soccer fan emotional and with a shirt on his head" />
-            <h2>The metamorphosis of soccer, VAR is just the beginning</h2>
-            <p class="description">Sports fans, soccer is changing. As it evolves, more and more technology is inserted into the sport. However, are the impacts positive or negative? Wait. Read it again. Exactly, negative technology impacts. This <a href="https://medium.com/@fernandobmoraes/the-metamorphosis-of-soccer-var-is-just-the-beginning-450170f75fc2" target="_blank">blog post</a> might have a point of view you never thought about.</p>            
-        </div>
-        <div class="project">
-          <div class="youtube-embed">
-            <iframe width='100%' height="315" src="https://www.youtube.com/embed/_DK2IAHx6kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <h2>Boost your Terminal PRODUCTIVITY with these HIDDEN tips!</h2>
-          <p class="description">A <a href="https://youtu.be/_DK2IAHx6kk" target="_blank">tutorial</a> with simple but efficient tips that will BOOST your productivity when using the Terminal. Here you'll learn things from how to type less to achieve the same tasks, to how to organize your entire routine in your Terminal. Although the video is filmed on a MAC OS, the commands may have similar translations to other operating systems. Hope you all enjoy it!</p>
-        </div>
-        <div class="project">
-          <img src="images/capstone.jpg" alt="Capstone Project Reflections" />
-          <h2>Individual Capstone Project Reflection</h2>
-          <p class="description">
-              Interested in following my progress and insights? I've compiled weekly reflections for my capstone project. You can view them all <a href="https://git.cs.vt.edu/fernandobmoraes/individual-reflections" target="_blank">here</a>.
-          </p>
-        </div>      
-        <div class="project">
-          <img src="images/research.jpg" alt="Virtual Reality equipment" />
-          <h2>The Use of Virtual Reality to implement soccer training</h2>
-          <p class="description">
-            Can Computer Science and soccer work together? After some <a href="https://docs.google.com/presentation/d/1414CYZcc-fTwjcNk-Iqmw-LJvR8P9TQywxHJI3MqIVA/edit?usp=sharing" target="_blank">research</a> we can confidently say yes. By immersing a soccer player in a specific Virtual Reality game scenario it is possible to help improve skill moves and decision making. </p>
-        </div>
-        <div class="project">
-          <img src="images/resume.jpg" alt="Resume and Computer" />
-          <h2>Fernando's Resume</h2>
-          <p class="description">
-            Interested in knowing my background? What about my experiences? Hopefully my <a href="https://docs.google.com/document/d/13GA-cJGz2TpvyswEdgqUdb32I36I2PxYcZOAjB8ZFWQ/edit?usp=sharing" target="_blank">resume</a> can help you with that.</p>
-        </div>
-        <div class="project">
-          <img src="images/club.JPG" alt="Virginia Tech Men's Club Soccer" />
-          <h2>Virginia Tech Men's Club Soccer</h2>
-          <p class="description">
-            We, <a href="https://www.instagram.com/vtclubsoccer/" target="_blank">Virginia Tech Men's Club Soccer</a>, are the top 2 soccer team in the nation after playing the Nationals Championship Final in Fall 2023.</p>
-        </div>
-      </main>
+        /* 2. Define theme colors as variables */
+        :root {
+            --bg-light: #ffffff;
+            --text-light: #000000;
+            --bg-dark: #000000;
+            --text-dark: #00FF00;
+            --accent: #FF69B4;
+        }
 
-      <footer>
-        <div>
-          <p class="copyright">© Fernando Branco Moraes 2023</p>
-          <ul class="icons">
-            <li><a href="https://www.instagram.com/_fernandobranco/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/fernando-branco-moraes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/fernandobmoraes/" target="_blank"><i class="fab fa-github"></i></a></li>
-          </ul>
-        </div>      
-      </footer>
+        /* 3. Apply to <body>: background and text color */
+        body {
+            font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace;
+            line-height: 1.7;
+            /* for readability purposes  */
+            transition: background 0.3s ease, color 0.3s ease;
+            /* bg transition */
+        }
 
+        body.light {
+            background: var(--bg-light);
+            color: var(--text-light);
+        }
+
+        body.dark {
+            background: var(--bg-dark);
+            color: var(--text-dark);
+        }
+
+        /* 4. Style links (<a> tags) */
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            /* remove link underline */
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+            /* underline on link when hovering over */
+        }
+
+        /* Ensure links adapt to each theme */
+        body.light a {
+            color: var(--accent);
+        }
+
+        body.dark a {
+            color: var(--accent);
+        }
+
+        nav a {
+            text-decoration: none;
+            /* ensure no underline around <button> */
+        }
+
+        nav a:hover,
+        nav a:focus {
+            text-decoration: none;
+        }
+
+        .body-container {
+            padding-left: 20px;
+            margin-right: 10px;
+        }
+
+        /* Hide and Show Style code */
+        .tab-content {
+            display: none;
+        }
+
+        /* hide all default sections of class tab-content by default */
+        .tab-content.active {
+            display: block;
+        }
+
+        /* only displays the section with that is 'active' */
+        nav button.active {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .banner {
+            text-align: center;
+            background-color: #FDF9F8;
+            border: 1px solid #00000028;
+        }
+
+        .theme-switch {
+            text-align: right;
+        }
+
+        .nav-btn {
+            width: 100px;
+            height: 25px;
+            font-size: 0.9rem;
+            background: transparent;
+            color: inherit;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            margin-right: 0.5rem;
+        }
+
+        .nav-btn:hover,
+        .nav-btn:focus {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .active-nav {
+            background: var(--accent);
+            color: var(--bg-dark);
+        }
+
+        .whoami-header {
+            padding-top: 40px;
+        }
+
+        /* bio image adjustments */
+        .formal-div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 auto;
+            margin-top: 2rem;
+            /* new */
+            margin-bottom: 2rem;
+            /* new */
+            max-width: 1000px;
+            padding: 20px;
+        }      
+
+        .formal-div img {
+            height: 500px;
+        }
+
+        .formal-image-text {
+            margin: 0;
+            /* remove default <p> margins */
+            font-size: 1rem;
+            line-height: 1.6;
+            /* more line-height makes “double <br>” less necessary */
+        }
+
+        .hobbies-header {
+            padding-top: 40px;
+        }
+
+        /* soccer image updates */
+        /* bio image adjustments */
+        .soccer-div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 auto;
+            margin-top: 2rem;
+            /* new */
+            margin-bottom: 2rem;
+            /* new */
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .soccer-div img {
+            height: 300px;
+        }
+
+        .soccer-image {
+            margin-left: auto;
+        }
+
+        .soccer-image-text {
+            margin: 0;
+            /* remove default <p> margins */
+            font-size: 1rem;
+            line-height: 1.6;
+            /* more line-height makes “double <br>” less necessary */
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding: 1rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+        }
+    </style>
+
+</head>
+
+<body class="light">
+    <header style="color: black;" class="banner">
+        <h3 id="bannerId"></h3><!-- 📁 fernando —— -zsh ——  -->
+    </header>
+
+    <div class="body-container">
+        <div class="theme-switch">
+            <p class="checkbox-switch">
+                🌕 Dark Mode
+                <label>
+                    <input type="checkbox" id="themeToggle">
+                </label>
+            </p>
+        </div>
+
+        <nav>
+            <h3>Last login: Sat May 31 13:16:21 on ttys001</h3>
+            <h3>
+                fernando@MacBookPro ~ % echo welcome! &&
+                <!-- cd Home -->
+                <a href="/" class="nav-link">
+                    <button class="nav-btn active-nav">cd Home</button>
+                </a>
+                ||
+                <!-- cd Projects -->
+                <!-- <a href="/projects/" class="nav-link">
+                    <button class="nav-btn">cd Projects</button>
+                </a>
+                || -->
+                <!-- cd Hobbies -->
+                <a href="/hobbies/" class="nav-link">
+                    <button class="nav-btn">cd Hobbies</button>
+                </a>
+                ||
+                <a href="/blogs/" class="nav-link">
+                    <button class="nav-btn">cd Blogs</button>
+                </a>
+            </h3>
+        </nav>
+        <main>
+            <section id="home" class="tab-content active">
+                <h3 class="whoami-header">fernando@MacBookPro ~ % whoami</h3>
+                <div class="formal-div">
+                    <img src="img/formal.jpg" alt="myself smilling">
+
+                    <p class="formal-image-text" align="justify">
+                        <strong style="display:block; font-size:1.5rem;">
+                            Fernando Branco Moraes
+                        </strong>
+
+                        👨🏽‍💻 : B.S. Computer Science (Secure Computing) && Minor in Human-Computer Interaction<br>
+                        📧 : <a href="mailto:fernandobmoraes@vt.edu">fernandobmoraes@vt.edu</a><br>
+                        📄 : <a href="/resume/">Resume</a><br>
+                        👨🏽‍💼 : <a href="https://www.linkedin.com/in/fernando-branco-moraes/" target="_blank"
+                            rel="noopener">LinkedIn</a><br>
+                        <!-- 🐿️ : <a href="https://github.com/fernandobmoraes/" target="_blank" rel="noopener">Github</a><br> -->
+                        📍 : Charlotte, NC <br>
+                        I am a computer scientist with a passion for <em>security</em>, <em>programming</em>,
+                        <em>human-computer interaction</em>, <em>ai</em>, <em>psychology</em>, <em>blockchain</em>, and
+                        <em>research</em>. I recently earned my <em>B.S. in Computer Science</em>
+                        from <em>Virginia Tech</em>.
+                        Over the last four years at VT, I've been fortunate to contribute to research with <a
+                            href="https://crowd.cs.vt.edu/kurt-luther/">Dr. Kurt Luther</a> at the <a
+                            href="https://crowd.cs.vt.edu/">Crowd Intelligence Lab</a>,
+                        <a href="https://bmdj-vt.github.io/about">Dr. Brendan David-John</a> at the <a
+                            href="https://bmdj-vt.github.io/">PrivateEye Lab</a>,
+                        <a href="https://www.ise.vt.edu/people/faculty/patrick.html"> Dr. Rafael Patrick</a> and <a
+                            href="https://experts.vt.edu/6379-todd-ogle">Dr. Todd Ogle</a> at the Applied Research in
+                        Immersive Experiences and Simulations <a
+                            href="https://lib.vt.edu/research-teaching/aries.html">(ARIES)</a> Program.
+                        Beyond the university, I’ve also gained industry experience at <a
+                            href="https://accuknox.com/">AccuKnox</a> (Cloud and Application Security), <a
+                            href="https://www.aftr.pro/#/">Arceum</a> (Blockchain Development), and <a
+                            href="https://delfia.tech/">Delfia Tech</a> (Observability and Cybersecurity).
+                    </p>
+                </div>
+                <h3 class="hobbies-header">
+                    fernando@MacBookPro ~ % cd Hobbies && ls
+                </h3>
+                <div class="soccer-div">
+                    <!-- 1) Text comes first -->
+                    <p class="soccer-image-text" align="justify">
+                        ⚽️ :  <a href="/hobbies/soccer/">playing soccer --></a><br>
+                        🛫 : traveling (<a href="/hobbies/travels/">pics around the globe</a>)<br>
+                        👨🏽‍🍳 : <a href="/hobbies/cooking/">making new dishes</a> (and <a href="hobbies/eating/">trying new ones</a>)<br>
+                        ✍🏽 : writing <a href="/blogs/">blogs</a> (did I already say that?)<br>
+                        👨🏽‍🏫 : teaching computer science to my girlfriend<br>
+                        🎨 : animation (coming soon)<br>
+                        🎥 : video making(coming soon)<br>
+                        loading ...
+                    </p>
+
+                    <!-- 2) Image comes second -->
+                    <img src="img/soccer.jpg" alt="myself playing soccer" />
+                </div>
+            </section>
+
+            <section id="projects" class="tab-content">
+                <h3>fernando@MacBookPro Projects % ls</h3>
+                <ul>
+                    <li><a href="#">Project One</a></li>
+                    <li><a href="#">Project Two</a></li>
+                </ul>
+            </section>
+
+            <section id="blog" class="tab-content">
+                <h3>fernando@MacBookPro Blogs % ls</h3>
+                <article>
+                    <h3>May 2025: First Post</h3>
+                    <p>…your post…</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <small>&copy; 2025 Fernando Branco Moraes</small>
+        </footer>
     </div>
-  </body>
+
+    <script>
+
+        // Setting up banner and width and height of screen
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        var bannerText = document.getElementById("bannerId");
+        bannerText.innerHTML = "📁 fernando —— -zsh —— " + width + "x" + height
+
+        // Starting light/dark mode logic
+
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body
+
+        // Now it is time to if the give the user light (default) and dark depending on the user's choice
+
+        function lightOrDarkOnLoad(themeToggle) {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                // check the toggle automatically
+                themeToggle.checked = true;
+                // add the dark class into <body> tag
+                body.classList.add('dark');
+                body.classList.remove('light');
+            }
+            else {
+                body.classList.add('light');
+                body.classList.remove('dark');
+            }
+        }
+
+        function lightOrDarkCheckBoxChange() {
+            if (themeToggle.checked === true) {
+                body.classList.add('dark');
+                body.classList.remove('light');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {
+                body.classList.add('light');
+                body.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        lightOrDarkOnLoad(themeToggle);
+        themeToggle.addEventListener('change', lightOrDarkCheckBoxChange);
+
+    </script>
+</body>
 
 </html>

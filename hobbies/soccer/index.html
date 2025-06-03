@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fernando Playing Soccer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- (Optional) Make sure the page doesn’t scroll horizontally -->
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace;
+            line-height: 1.7;
+        }
+
+        .banner {
+            text-align: center;
+            background-color: #FDF9F8;
+            border: 1px solid #00000028;
+        }
+
+        .terminal-prompt {
+            padding-top: 20px;
+            padding-left: 20px;
+            margin-right: 10px;
+        }
+
+        .content-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: #FF69B4;
+            text-decoration: none;
+            /* remove link underline */
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+            /* underline on link when hovering over */
+        }
+
+        .soccer-images img {
+            width: 800px;
+            height: 600px;
+            display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Banner (same as your main pages) -->
+    <header class="banner" style="color: black;">
+        <h3 id="bannerId"></h3> <!-- 📁 fernando —— -zsh —— WIDTHxHEIGHT -->
+    </header>
+
+    <h3 class="terminal-prompt">fernando@MacBookPro Hobbies/Soccer % ls </h3>
+
+    <h3 align="center"><a href="/" class="back-link">Back to Home</a></h3>
+
+    <div class="soccer-images">
+        <img src="soccer1.jpg" alt="myself playing soccer" />
+        <img src="soccer2.jpg" alt="myself playing soccer" />
+        <img src="soccer3.jpg" alt="myself playing soccer" />
+        <img src="soccer4.jpg" alt="myself playing soccer" />
+        <img src="soccer5.jpg" alt="myself playing soccer" />
+        <img src="soccer6.jpg" alt="myself playing soccer" />
+        <img src="soccer7.jpg" alt="myself playing soccer" />
+        <img src="soccer8.jpg" alt="myself playing soccer" />
+        <img src="soccer9.jpg" alt="myself playing soccer" />
+        <img src="soccer10.jpg" alt="myself playing soccer" />
+    </div>
+    <!-- Banner + Theme script (only banner part shown here) -->
+    <script>
+        // Update banner with viewport dimensions
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        document.getElementById('bannerId').textContent =
+            '📁 fernando —— -zsh —— ' + width + 'x' + height;
+    </script>
+</body>
+
+</html>
