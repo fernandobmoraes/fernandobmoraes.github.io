@@ -18,9 +18,20 @@
             padding: 0;
         }
 
+        pre {
+            display: inline-block;
+            text-align: left;
+            /* keep lines left-aligned inside */
+            margin: 0 auto;
+            /* center the block itself */
+            padding: 1rem;
+            line-height: 1.3;
+        }
+
         body {
             font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace;
             line-height: 1.7;
+            text-align: center;
         }
 
         .banner {
@@ -51,13 +62,6 @@
             text-decoration: underline;
             /* underline on link when hovering over */
         }
-
-        .ascii-art {
-            padding-left: 120px;
-            padding-right: 120px;
-            align-items: center;
-        }
-
     </style>
 </head>
 
@@ -67,12 +71,13 @@
         <h3 id="bannerId"></h3> <!-- 📁 fernando —— -zsh —— WIDTHxHEIGHT -->
     </header>
 
-    <h3 class="terminal-prompt">fernando@MacBookPro Hobbies % ls </h3>
+    <h3 class="terminal-prompt" align="left">fernando@MacBookPro Hobbies % ls </h3>
 
     <div class="content-container">
-        ⚽️ :  <a href="/hobbies/soccer/">playing soccer</a><br>
+        ⚽️ : <a href="/hobbies/soccer/">playing soccer</a><br>
         🛫 : traveling (<a href="/hobbies/travels/">pics around the globe</a>)<br>
-        👨🏽‍🍳 : <a href="/hobbies/cooking/">making new dishes</a> (and <a href="hobbies/eating/">trying new ones</a>)<br>
+        👨🏽‍🍳 : <a href="/hobbies/cooking/">making new dishes</a> (and <a href="hobbies/eating/">trying new
+            ones</a>)<br>
         ✍🏽 : writing <a href="/blogs/">blogs</a> (did I already say that?)<br>
         👨🏽‍🏫 : teaching computer science to my girlfriend<br>
         🎨 : animation (coming soon)<br>
@@ -80,14 +85,14 @@
         loading ...
     </div>
 
-    <h3 align="center"><a href="/" class="back-link">Back to Home</a></h3>
-    
-    <div class="ascii-art">
+    <h3><a href="/" class="back-link">Back to Home</a></h3>
+
+    <div>
         <h1>
-            <pre>
+            <pre class="ascii-art">
                                              .                    
                                             /~1
-       'keep going ...'                   _?   \   ,
+       &lt; keep going ...&gt;                  _?   \   ,
       /                                  / ,    \ /ˆ\  
      O                            _  /\_/ /~\   /ˆ\  l,
     /|\                         _/w\/    /   \ç/   \_/^\     
