@@ -238,7 +238,7 @@
         </div>
 
         <nav>
-            <h3>Last login: Sat May 31 13:16:21 on ttys001</h3>
+            <h3>Last login: Sat Jun 21 06:52:43 on console</h3>
             <h3>
                 fernando@MacBookPro ~ % echo welcome! &&
                 <!-- cd Home -->
@@ -359,6 +359,16 @@
 
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body
+        const cursors = document.querySelectorAll('.cursor')
+
+        function updateCursor() {
+            const isDark = body.classList.contains('dark')
+            cursors.forEach(img => {
+                img.src = isDark
+                ? 'img/Flickering_cursor.gif'
+                : 'img/black_cursor.gif';
+            });
+        }
 
         // Now it is time to if the give the user light (default) and dark depending on the user's choice
 
@@ -375,6 +385,7 @@
                 body.classList.add('light');
                 body.classList.remove('dark');
             }
+            updateCursor();
         }
 
         function lightOrDarkCheckBoxChange() {
@@ -388,6 +399,7 @@
                 body.classList.remove('dark');
                 localStorage.setItem('theme', 'light');
             }
+            updateCursor();
         }
 
         lightOrDarkOnLoad(themeToggle);
